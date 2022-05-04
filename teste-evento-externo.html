@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evento externo </title>
+    </head>
+    <body>
+        <!-- AddEvent adiciona uma função a ser dispara pelo evento, ex: um botão de enviar-->
+        <!-- removeEvent: Remove um listner adicionado em um objeto -->
+
+        <!-- Exemplo de evento incline -->
+
+        <h1 id="paragrafo">
+            Clique a Aqui!
+        </h1>
+
+        <!-- Exemplo de evento externo com AddEventListener -->
+
+        <h1 onclick="alert ('Clicou'); this.innerHTML= 'Clicando foi 2'">
+            Clique aqui 2
+
+        </h1>
+        <script>
+     //Adicionando event listner ao elemento Html
+
+            var paragrafo = document.getElementById("paragrafo").addEventListener("click",
+    function(){
+        alert("Olá mundo")
+    })
+        </script>
+    </body>
+</html>
